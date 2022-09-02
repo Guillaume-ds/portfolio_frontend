@@ -1,0 +1,32 @@
+.arrowBottom {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fafafa;
+    border-right: 2px solid #fafafa;
+    transform: rotate(135deg);
+  }
+
+.button{
+  color:$electricBlue;
+  background-color: $veryLightBlue;
+  padding: 7px;
+}
+.button:hover{
+  border: 1px solid $electricBlue;
+  padding: 6px;
+}
+.activeButton{
+  color: $veryLightBlue;
+  background-color: $electricBlue;
+}
+
+
+.electricBlue{
+  color:$electricBlue;
+}
+
+.contactContainer{
+  background: rgb(211,224,255);
+  background: linear-gradient(0deg, rgba(211,224,255,1) 33%, rgba(255,255,255,1) 37%);
+}

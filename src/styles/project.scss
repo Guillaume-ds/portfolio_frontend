@@ -1,0 +1,83 @@
+@import "variables";
+.projectsList{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.projectCard{
+    width:300px;
+    background-color: rgba(150,150,150,0.5);
+    border-radius: 15px;
+    padding:10px;
+    margin:10px;
+}
+
+.projectPicture{
+    height:15em;
+    width:100%;
+    object-fit: cover;
+}
+
+.projectTitle{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.projectTitle:hover{
+    overflow: visible;
+    white-space: normal;
+    background-color: white;
+    z-index: 1000;
+    height: fit-content;
+}
+.projectDescription{
+    overflow: scroll;
+    padding: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height:0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+// EXPERIENCE CARD
+
+.experienceCard{
+    background-color: $veryLightBlue;
+}
+
+.experienceBorder{
+  border-left: 2px dotted $electricBlue;
+  margin-top: 2px;
+}
+
+.experienceBorder:hover{
+  border-left: 2px solid $electricBlue;
+}
+
+.arrowExperience{
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent $electricBlue transparent;
+  transform: translateX(-4px);
+}

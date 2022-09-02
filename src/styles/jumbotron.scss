@@ -1,0 +1,68 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+.jumbotronBackground{
+    background: linear-gradient(-50deg, rgb(18, 18, 51) 1%, rgb(7, 68, 160) 13%, rgb(44, 80, 225) 20%, rgb(59, 95, 194) 40%, rgb(73, 116, 236) 45%, rgb(48, 69, 171) 50%, rgb(75, 126, 236) 70%, rgb(29, 38, 157)89%, rgba(0,0,80,1) 98%);
+    background-size: 200% 250%;
+    animation: gradient 15s infinite ease;
+    min-height: 100vh;
+    min-width: 100%;
+    box-shadow: 0px 0px 1px 1px $darkBlue;
+}
+  
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.commandPromt{
+  background-color: #0f0d46;
+  border-radius:7px;
+  box-shadow: 0px 3px 10px 1px $lightBlue;
+  color:$veryLightBlue;
+  font-family:'Kanit', sans-serif;
+}
+
+.commandPromtTop{
+  background-color: $veryLightBlue;
+  color:$darkBlue;
+  border-radius:2px 2px 0px 0px;
+}
+
+
+.typingText{ 
+  width: 16ch;
+  animation: typing 1s steps(22),blink .5s step-end 4 alternate;
+  white-space: nowrap;
+  overflow: hidden;  
+  font-family: monospace;
+  border-right: 3px solid transparent;
+  padding-right:10px;
+  font-family:'Kanit', sans-serif;
+}
+
+.blinkingText{
+  animation: blink .5s step-end infinite alternate;
+  border-right: 3px solid transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: white
+  }
+}
+

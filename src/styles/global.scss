@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "project";
+@import "jumbotron";
+@import "variables";
+@import "utils";
+@import "navbar";
+@import "presentation";
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+a{
+  color:$electricBlue;
+}
+
+
