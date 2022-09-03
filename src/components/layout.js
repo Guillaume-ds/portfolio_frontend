@@ -10,7 +10,6 @@ const Layout = ({ title, content, children, activeNavName }) => {
                 <meta 
                     name="description" 
                     content={content} />
-                <script src="https://kit.fontawesome.com/9267fd29be.js" crossorigin="anonymous"></script>
             </Head>
 
             <NavBar activeNavName={activeNavName}/>

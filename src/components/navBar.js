@@ -1,4 +1,5 @@
 import PageNav from "./pageNav";
+import Link from "next/link";
 import { useState } from "react";
 
 const NavBar = () =>{
@@ -17,11 +18,11 @@ const NavBar = () =>{
       <nav className="px-2 border-gray-200  navBar">
 				<div className="container flex flex-wrap justify-between items-center mx-auto">
 
-					<a href="/" className="flex items-center">
+					<Link href="/" className="flex items-center">
 						<span className="self-center ml-5 text-2xl lg:text-4xl font-bold whitespace-nowrap navName">
 							Guillaume de Surville
 						</span>
-					</a>
+					</Link>
 
 					<button data-collapse-toggle="mobile-menu" type="button" 
 						onClick={()=>checkHidden()}
@@ -32,7 +33,7 @@ const NavBar = () =>{
 						<span className="sr-only">Open main menu</span>
 						<svg className="w-6 h-6" aria-hidden="true" 
 						fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+							<path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
 					</button>
 
 					<div className={"w-full md:block md:w-auto px-5 " + isHidden}  id="mobile-menu">						

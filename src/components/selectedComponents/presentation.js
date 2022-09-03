@@ -68,7 +68,7 @@ const Presentation =()=>{
                         I am passionate about <strong>music and sailing</strong> and I have praticed both activites for more than 10 years now. 
                     </p>
                     <p className="text-center mt-8">
-                        <a href="https://drive.google.com/file/d/18LjD661RWdJptFwEpObHVvyFhMUqP3NH/view?usp=sharing" target="_blank"> 
+                        <a href="https://drive.google.com/file/d/18LjD661RWdJptFwEpObHVvyFhMUqP3NH/view?usp=sharing" target="_blank" rel="noreferrer"> 
                             My resumé
                         </a> 
                     </p>

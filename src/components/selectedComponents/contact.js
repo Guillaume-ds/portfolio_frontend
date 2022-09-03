@@ -29,6 +29,7 @@ const Contact =()=>{
 									<button
 									className={"text-sm lg:text-base md:w-1/6 sm:mx-2 px-2 lg:py-2 rounded border hover:shadow " + styleButton(type)}
 									name={type}
+									key={type}
 									onClick={(e)=>setContactType(e.target.name)}>
 											{type}
 									</button>
@@ -62,14 +63,14 @@ const Contact =()=>{
 			return(
 				<div className="w-5/6 md:w-2/3 lg:w-1/2 mx-auto shadow border rounded">
 				<p className="m-4 text-center font-bold text-gray-700 navName">
-				Send me a message with your email address and I'll reach at to you!
+				Send me a message with your email address and I will reach at to you!
 				</p>
 
 				<form className="bg-white rounded px-2 md:px-8 pt-6 pb-8 ">
 
 					<div className="mb-4">
 							<label 
-								className="block text-gray-700 text-sm mb-2 text-indigo-900" for="username">
+								className="block text-gray-700 text-sm mb-2 text-indigo-900" htmlFor="username">
 								Your Email Address
 							</label>
 							<input 
@@ -82,7 +83,7 @@ const Contact =()=>{
 					
 						
 					<div className="mb-6">
-						<label class="block text-gray-700 text-sm mb-2 text-indigo-900" for="password">
+						<label className="block text-gray-700 text-sm mb-2 text-indigo-900" htmlFor="password">
 								Content
 						</label>
 						<textarea  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3

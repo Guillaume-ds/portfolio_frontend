@@ -59,7 +59,8 @@ const PageNav = () => {
                     className={
                     "hover:underline mx-2 my-4 text-sm md:text-lg lg:text-2xl " 
                     + checkActiveNavName(navName)}
-                    name={navName} >
+                    name={navName}
+                    key={navName} >
                     {navName}
                 </a>
             ))}

@@ -36,6 +36,7 @@ const DisplaySkill = () => {
                     <button
                     className={"text-sm lg:text-base md:w-1/5 sm:mx-2 px-2 lg:py-2 rounded border hover:shadow " + styleButton(skill)}
                     name={skill}
+					key={skill}
                     onClick={(e)=>setActiveSkill(e.target.name)}>
                         {skill}
                     </button>
