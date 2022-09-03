@@ -38,13 +38,13 @@ const WritingText = () => {
                 Guillaume de Surville
             </h1>
             <p className={display + " md:text-xl lg:text-2xl mb-10 px-1 md:px-12 xl:px-20 font-bold"}>
-                > MSc Data Science for business at <em>Polytechnique</em> and <em>HEC Paris</em>
+                MSc Data Science for business at <em>Polytechnique</em> and <em>HEC Paris</em>
             </p>    
             <p className={display2 + " md:text-xl  lg:text-2xl mb-10 px-1 md:px-12 xl:px-20 font-bold"}> 
-                > Efficient in Python and Javascript
+                Efficient in Python and Javascript
             </p>
             <p className={display3 + " md:text-xl lg:text-2xl mb-10 px-1 md:px-12 xl:px-20 font-bold"}> 
-                > Currently looking for an internship
+                Currently looking for an internship
             </p>
             <span className={display4 + " w-0 h-5 md:pl-12 xl:pl-20 text-lg lg:text-xl blinkingText"}>&nbsp;</span>
 
