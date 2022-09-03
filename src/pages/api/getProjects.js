@@ -21,12 +21,12 @@ export async function filterProjects(tags=[],language=[],keywords="") {
 
 export const languageList = [
   "python",
-  "react",
+  "javascript",
   "sql"
 ]
 
 export const tagsList = [
   "web development",
   "data science",
-  "data mining"
+  "blockchain"
 ]

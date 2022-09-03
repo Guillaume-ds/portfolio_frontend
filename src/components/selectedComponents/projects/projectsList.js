@@ -9,7 +9,6 @@ export default function ProjectsList(){
     // get params from URL, if any
     const router = useRouter()
     const params = router.query
-    console.log(params)
     // check params and use State
     const [languages, setLanguage] = useState([])
     const [tags, setTags] = useState([]) 
@@ -44,8 +43,6 @@ export default function ProjectsList(){
         checkParams()
     },[params])
 
-    console.log(languages,tags,keywords)
-
     // use State for projects
     const [projects,setProject] = useState([])
 
@@ -72,7 +69,7 @@ export default function ProjectsList(){
             mt-12 md:mt-24
             gap-y-12 lg:gap-y-24"
             >            
-            {projects.map(project=><ProjectCard project={project} />)}
+            {projects.map(project=><ProjectCard project={project} key={project.title}/>)}
         </div>
         </div>
     )

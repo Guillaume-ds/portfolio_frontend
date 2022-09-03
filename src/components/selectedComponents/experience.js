@@ -7,8 +7,14 @@ const Experience =()=>{
     const [experiences, setExperiences]= useState([])
 
     async function getExperiences(){
-        const res = await axios.get(backendUrl+"/experiences/")
-        setExperiences(res.data)
+		try{
+			const res = await axios.get(backendUrl+"/experiences/")
+        	setExperiences(res.data)
+			console.log(res)
+		}catch{
+			setExperiences([])
+		}
+        
     }
 
 
