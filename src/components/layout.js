@@ -21,7 +21,7 @@ const Layout = ({ title, content, children, activeNavName }) => {
 };
 
 Layout.defaultProps = {
-    title: 'Apokl',
+    title: 'Guillaume de Surville | Portoflio',
     content: "Guillaume de Surville's portfolio. ML and Data scientist student at HEC Paris and Polytechnique. "
 }
 

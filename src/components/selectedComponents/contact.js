@@ -12,6 +12,8 @@ const Contact =()=>{
 				"Send a message",
 				"Contact informations"]
 
+				console.log(sender)
+
 	const ContactTypeButton = () =>{
 			
 			function styleButton(type){
@@ -31,7 +33,7 @@ const Contact =()=>{
 									name={type}
 									key={type}
 									onClick={(e)=>setContactType(e.target.name)}>
-											{type}
+										{type}
 									</button>
 									
 							))}
@@ -76,8 +78,7 @@ const Contact =()=>{
 							<input 
 								className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 
 								leading-tight focus:outline-none focus:shadow-outline" 
-								id="username" 
-								onChange={(e)=>(setSender(e.target.value))}>
+								onChange={e=>(setSender(e.target.value))}>
 							</input>
 					</div>
 					
@@ -86,10 +87,10 @@ const Contact =()=>{
 						<label className="block text-gray-700 text-sm mb-2 text-indigo-900" htmlFor="password">
 								Content
 						</label>
-						<textarea  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3
-							leading-tight focus:outline-none focus:shadow-outline" id="password" rows="5"
-							onChange={(e)=>(setContent(e.target.value))}>
-						</textarea >
+						<input  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3
+							leading-tight focus:outline-none focus:shadow-outline" 
+							onChange={e=>(setContent(e.target.value))}>
+						</input >
 					</div>
 
 
@@ -117,8 +118,48 @@ const Contact =()=>{
 
     return(
 		<div className="h-screen grid content-center contactContainer">
-			<ContactTypeButton/>
-			<DisplayContact />    
+			<div className="w-5/6 md:w-2/3 lg:w-1/2 mx-auto shadow border rounded">
+				<p className="m-4 text-center font-bold text-gray-700 navName">
+				Send me a message with your email address and I will reach at to you!
+				</p>
+
+				<form className="bg-white rounded px-2 md:px-8 pt-6 pb-8 ">
+
+					<div className="mb-4">
+							<label 
+								className="block text-gray-700 text-sm mb-2 text-indigo-900" htmlFor="username">
+								Your Email Address
+							</label>
+							<input 
+								className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 
+								leading-tight focus:outline-none focus:shadow-outline" 
+								onChange={e=>(setSender(e.target.value))}>
+							</input>
+					</div>
+					
+						
+					<div className="mb-6">
+						<label className="block text-gray-700 text-sm mb-2 text-indigo-900" htmlFor="password">
+								Content
+						</label>
+						<textarea  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3
+							leading-tight focus:outline-none focus:shadow-outline" rows="5"
+							onChange={e=>(setContent(e.target.value))}>
+						</textarea >
+					</div>
+
+
+					<div className="flex items-center justify-between">
+						<button className="button
+								font-bold  px-4 rounded focus:outline-none focus:shadow-outline mx-auto" 
+								type="button"
+								onClick={()=>sendMail()}>
+								Send message
+						</button>
+					</div>
+
+				</form>
+			</div>			 
 		</div>
     )
 }
