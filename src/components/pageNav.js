@@ -15,7 +15,7 @@ const PageNav = () => {
         else if(router.pathname === "/experience"){
             await setActiveName("Experience")    
         }
-        else if(router.pathname === "/projects"){
+        else if(router.pathname.startsWith("/projects")){
             await setActiveName("Projects")
         }
         else if(router.pathname === "/contact"){

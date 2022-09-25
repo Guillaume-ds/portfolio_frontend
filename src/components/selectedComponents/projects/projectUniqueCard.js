@@ -1,6 +1,6 @@
 export default function projectUniqueCard({project}){
     return(
-      <div className="md:m-0 md-w-full bg-white border border-gray-200 shadow-md">
+      <div className="md:m-0 md-w-full bg-white border border-gray-200 shadow-md mb-8">
                 <img className="projectUniquePicture" 
                 src={project.picture?
                     project.picture
