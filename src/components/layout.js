@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import NavBar from './navBar';
+import Favicon from "../assets/images/favicon.ico"
 
 const Layout = ({ title, content, children, activeNavName }) => {
 
@@ -10,6 +11,7 @@ const Layout = ({ title, content, children, activeNavName }) => {
                 <meta 
                     name="description" 
                     content={content} />
+                <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
             </Head>
 
             <NavBar activeNavName={activeNavName}/>
