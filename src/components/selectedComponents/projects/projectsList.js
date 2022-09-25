@@ -5,7 +5,7 @@ import ProjectFilter from "./projectsFilter";
 import ProjectCard from "./projectCard";
 
 
-export default function ProjectsList(){
+export default function ProjectsList({slug=null}){
     // get params from URL, if any
     const router = useRouter()
     const params = router.query
@@ -47,15 +47,15 @@ export default function ProjectsList(){
     const [projects,setProject] = useState([])
 
     async function retrieveProject(){
-        const list = await filterProjects(tags, languages,keywords)
+        const list = await filterProjects(tags,languages,keywords,slug)
         setProject(list)
     }
     useEffect(()=>{
         retrieveProject()      
-    },[languages,tags,keywords])
+    },[languages,tags,keywords,slug])
 
     return(
-        <div className=" mt-16 md:mt-36">
+        <div className=" my-16 md:mt-36">
         <ProjectFilter            
             languages={languages} setLanguage={setLanguage} 
             tags={tags} setTags={setTags}

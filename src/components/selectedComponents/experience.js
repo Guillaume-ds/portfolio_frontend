@@ -55,10 +55,11 @@ const Experience =()=>{
 
 			const date_deb = new Date(experience.date_deb)
 			const date_fin = new Date(experience.date_fin)
+			
 			const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 			date_deb = months[date_deb.getMonth()] + " " + date_deb.getFullYear()
 			date_fin = months[date_fin.getMonth()] + " " + date_fin.getFullYear()
-			console.log(experience.queryParams)
+
 			return(
 				<div className="
 						mx-4 md:mx-12 lg:mx-24					

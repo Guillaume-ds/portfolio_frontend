@@ -6,15 +6,17 @@ export default async function getProjects() {
   return projects.data
 }
 
-export async function filterProjects(tags=[],language=[],keywords="") {
+export async function filterProjects(tags=[],language=[],keywords="",slug=null) {
   let headers = {
     "content-type":"application-json"
   }
   let body = {
     "language": language,
     "tags":tags,
-    "keywords":keywords
+    "keywords":keywords,
+    "slug":slug
   }
+
   const projects = await axios.post(backendUrl+"/projects/",body,headers)
   return projects.data
 }
