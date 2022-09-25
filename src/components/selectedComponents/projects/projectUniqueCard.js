@@ -18,13 +18,13 @@ export default function projectUniqueCard({project}){
 						</p>
 
 
-						<p className="font-normal text-gray-700 text-justify mx-auto px-4 md:w-1/2">
+						<p className="font-normal text-gray-700 projectDescription text-justify mx-auto px-4 md:w-1/2 ">
 								{project.content}
 						</p>
 						
 
 				</div>
-                <div className="mt-16 flex justify-center">
+                <div className="my-16 flex justify-center md:w-3/4 lg:w-1/2 mx-auto">
                     {
                         project.code_url?
                         <a href={project.code_url} 
