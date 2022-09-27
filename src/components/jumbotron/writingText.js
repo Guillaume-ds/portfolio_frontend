@@ -49,7 +49,7 @@ const WritingText = () => {
             <span className={display4 + " w-0 h-5 md:pl-12 xl:pl-20 text-lg lg:text-xl blinkingText"}>&nbsp;</span>
 
             <p className={display4 + " text-center md:mt-14 mt-7"}>
-                <a href="#pageNav" >
+                <a href="#Prez" >
                 <span className={display4 + "arrowBottom mr-5"}></span>
                 <span className={display4 + " text-indigo-50"}>See more below</span>
                 <span className={display4 + "arrowBottom ml-5"}></span>

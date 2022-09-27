@@ -60,13 +60,13 @@ export default function ProjectsList({slug=null}){
             languages={languages} setLanguage={setLanguage} 
             tags={tags} setTags={setTags}
             keywords={keywords} setKeywords={setKeywords}/>
+            <p className="navName my-8 text-center text-xl">- {projects.length} projects -</p>
         <div className="
             md:grid 
             content-around
             md:px-12 xl:px-24
             md:grid-cols-2 2xl:grid-cols-3
             md:gap-x-10 xl:gap-x-20 
-            mt-12 md:mt-24
             gap-y-12 lg:gap-y-24"
             >            
             {projects.map(project=><ProjectCard project={project} key={project.title}/>)}

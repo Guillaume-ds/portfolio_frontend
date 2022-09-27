@@ -39,7 +39,8 @@ const Presentation =()=>{
         <div>
             <Jumbotron  />
             
-            <div className="w-full px-2 md:px-24 lg:grid lg:grid-cols-5 lg:gap-x-24 mb-12 md:my-36 lg:my-48">
+            <div className="w-full px-2 md:px-24 lg:grid lg:grid-cols-5 lg:gap-x-24 mb-12 md:my-36 lg:my-48"
+                id="Prez">
                 <div className="
                     lg:col-span-2 
                     text-center grid content-center 
