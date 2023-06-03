@@ -53,16 +53,16 @@ const Presentation =()=>{
 
                 <div className="lg:col-span-3 text-justify text-lg md:text-2xl grid content-center">
                     <p className="pb-6">
-                        I am a 22 years old student currently enrolded in the
+                        I am a 23 years old student currently enrolded in the
                         <strong> MSc Data Science for Business at HEC Paris and Polytechnique</strong>
                         . 
                     </p>
                     <p className="pb-6">
-                        I am looking for an internship in data science starting in March 2023, preferably related to artificial intelligence.
+                        I am currently working as a Data Scientist at Morgan Stanley, where I am doing research on Recommendation Systems and Deep Learning.
                     </p>                
                     <p className="pb-6">
                         I have working knowledge in <strong>Python</strong> for both <strong>web development and data analysis</strong>. 
-                        I am currently learning ML/DL in python. 
+                        I am currently specializing in ML/DL in python.
                         I also have experience with <strong>Javascript</strong> for web development, and other data analysis tools such as PowerBI and Tableau. 
                     </p>
                     <p >
