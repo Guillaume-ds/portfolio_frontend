@@ -9,7 +9,7 @@ const Presentation =()=>{
     const list = ["a Web Developper",
                 "a Data Scientist",
                 "a MSc student",
-                "looking for an internship"]
+                "AI researcher"]
         
 
     function changeCounter(counter){
